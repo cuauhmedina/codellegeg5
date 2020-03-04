@@ -1,0 +1,26 @@
+/*Selector de id*/
+#titulo{
+    color: blue;
+}
+
+/*Selector universal*/
+*{
+    color: gray;
+}
+
+/*Selector de clase*/
+.pGreen{
+    color: green;
+    font-size: 20px;
+}
+
+/*Selector de elemento*/
+body{
+    background-color: lavender;
+}
+
+/*Selecto de elementos*/
+a, li{
+    color: indigo;
+    font-size: 16px;
+}

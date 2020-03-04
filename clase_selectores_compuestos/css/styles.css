@@ -1,0 +1,19 @@
+/*Selector de descendiente (espacio)*/
+table p{
+    color: blue;
+}
+
+/*Selector de hijos*/
+li>p{
+    color: green;
+}
+
+/*Selector adyacente*/
+p+a{
+    color: red;
+}
+
+/*Selector de hermanos*/
+#especial~li{
+    color: hotpink;
+}
