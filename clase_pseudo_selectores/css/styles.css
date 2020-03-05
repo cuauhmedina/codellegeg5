@@ -1,32 +1,23 @@
-/*pseudo class hover, cuando hay un "hover" se aplica el estilo*/
-h1:hover{
-    color: blue;
-    cursor: pointer;
+p::first-letter{
+    font-size: 40px;
+    font-weight: bolder;
 }
 
-/*pseudo class first-child, aplica el estilo a los li que son primer hijo*/
-li:first-child{
-    color: blueviolet;;
+p::first-line{
+    color: saddlebrown;
 }
 
-/*pseudo class last-child, aplica el estilo a los li que son él último hijo*/
-li:last-child{
-    color: red;
+span::before{
+    content: "IMPORTANT: ";
+    background-color: red;
 }
 
-/*pseudo class nth-child, aplica el estilo a los li en 4ta posición*/
-li:nth-child(4){
-    color: green;
+span::after{
+    content: "!!!!";
+    background-color: red;
 }
 
-/* pseudo class nth-child, aplica el estilo a posiciones impares.
-otros valores pueden ser "even" o {2}n+0
-*/
-tr:nth-child(odd){
-    background-color: gray;
-}
-
-/* pseudo class not(), aplica el estilo a todos los li que no tienen la @class="normal"*/
-li:not(.normal){
-    font-size: 10px;
+p::selection{
+    background-color: black;
+    color: yellow;
 }
