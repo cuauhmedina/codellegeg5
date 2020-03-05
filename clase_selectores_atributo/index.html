@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <form action="#">
+        Nombre : <input type="text" name="nombre"> <br>
+        Apellido: <input type="text" name="apellidos"> <br>
+        email: <input type="email" name="email"> <br>
+        contraseña: <input type="password" name="pass" id="pass"> <br>
+        Fecha de nacimineto <input type="date" name="nacimiento" id="nacimiento">
+        <br>
+        Sexo: 
+        <select name="sexo" id="sexo">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select>
+        <br>
+        Descripción: <br>
+        <textarea name="desc" id="" cols="30" rows="10">Contenido</textarea> <br>
+        Navegador favorito: 
+        <input list="navegadores" name="nav">
+        <datalist id="navegadores">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+    </form>
+</body>
+</html>
