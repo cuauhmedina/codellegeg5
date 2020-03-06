@@ -30,3 +30,11 @@ tr:nth-child(odd){
 li:not(.normal){
     font-size: 10px;
 }
+
+body{
+    font-size: 12px;
+}
+
+li{
+    font-size: 2em;
+}
