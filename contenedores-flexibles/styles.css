@@ -1,0 +1,55 @@
+body{
+    /*remueve margen de la página*/
+    margin: 0 auto;
+}
+
+header{
+    background-color: cornflowerblue;
+    height: 150px;
+}
+
+footer{
+    height: 200px;
+    background-color: slateblue;
+}
+
+#flexible{
+    min-height: 500px;
+    background-color: peru;
+    padding: 10px;
+    
+    /*asigna el tipo flexible al display*/
+    display: flex;
+
+    /*define la alineación horizontal de los elementos*/
+    /* justify-content: flex-end; */
+
+    /*define la alineacion vertical de los elementos*/
+    /* align-items: flex-end; */
+
+    /*wrapping de elementos (breaks cuando hay overflow)*/
+    /* flex-wrap: wrap; */
+
+    /*cambia la direccion entre columnas y filas*/
+    /* flex-direction: column-reverse; */
+}
+
+#flexible>div{
+    height: 75px;
+    width: 75px;
+
+    /*Crea un element flexible que crece proporcionalmente*/
+    /* flex: 1; */
+
+    background-color: darkolivegreen;
+    margin: 10px;
+}
+
+#flexible>div.especial{
+    background-color: darkblue;
+
+    width: 150px;
+
+    /*Crea un element flexible que crece proporcionalmente (2 veces más rápido)*/
+    /* flex: 1; */
+}

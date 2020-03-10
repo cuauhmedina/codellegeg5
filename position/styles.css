@@ -1,0 +1,55 @@
+body{
+    /*remueve margen de la página*/
+    margin: 0 auto;
+    font-size: 1.3em;
+    font-family: 'Trebuchet MS';
+}
+
+header{
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 100%;
+}
+
+main{
+    background-color: peru;
+    padding: 10px;
+    min-height: 1800px;
+
+    /*hace el contender relativo, si tiene descendientes con absoulte será en relación a este contenedor*/
+    /* position: relative; */
+}
+
+main div{
+    background-color: darkolivegreen;
+
+    /*mostrarlos en linea*/
+    display: inline-block;
+
+    width: 100px;
+    height: 100px;
+
+}
+
+#special{
+    background-color: brown;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#odd{
+    background-color: darkblue;
+
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    color: white;
+}

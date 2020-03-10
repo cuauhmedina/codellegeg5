@@ -1,0 +1,81 @@
+body{
+    /*remueve margen de la página*/
+    margin: 0 auto;
+}
+
+header{
+    background-color: cornflowerblue;
+    height: 150px;
+}
+
+footer{
+    height: 150px;
+    background-color: slateblue;
+    /*Ignora elementos flotantes antes del footer*/
+    clear: both;
+}
+
+aside{
+    background-color: brown;
+    height: 400px;
+}
+
+main{
+    background-color: peru;
+    height: 400px;
+}
+
+#pagina{
+    height: 400px;
+}
+
+nav{
+    height: 100px;
+    background-color: crimson;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    header, footer, nav{
+        height: 100px;
+    }
+
+    aside{
+        display: none;
+    }
+
+}
+  
+  /* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+    #pagina{
+        display: flex;
+        margin: 0 auto;
+        flex-direction: row-reverse;
+    }
+
+    aside{
+        flex: 1;
+    }
+
+    main{
+        flex: 4;
+    }
+}
+  
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    
+    #pagina{
+        display: flex;
+    }
+
+    aside{
+        flex: 1;
+    }
+
+    main{
+        flex: 3;
+    }
+    
+}

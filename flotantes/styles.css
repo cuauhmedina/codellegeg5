@@ -1,0 +1,54 @@
+body{
+    /*remueve margen de la página*/
+    margin: 0 auto;
+}
+
+header{
+    background-color: cornflowerblue;
+    height: 150px;
+}
+
+#container{
+    width: 980px;
+    margin: 0 auto;
+}
+
+aside{
+    background-color: crimson;
+    height: 300px;
+    width: 300px;
+    float: left;
+}
+
+main{
+    background-color: peru;
+    height: 600px;
+    width: 680px;
+    float: left;
+    padding: 10px;
+    /*incluye margenes en el tamaño de la caja*/
+    box-sizing: border-box;
+}
+
+footer{
+    height: 200px;
+    background-color: slateblue;
+    /*Ignora elementos flotantes antes del footer*/
+    clear: both;
+}
+
+.columna{
+    float: left;
+    width: 31%;
+    margin: 10px 1.15%;
+    height: 100px;
+    background-color: gray;
+}
+
+/*imagen flotante*/
+main img{
+    width: 200px;
+    margin: 20px;
+    float: left;
+}
+
