@@ -41,8 +41,14 @@ nav{
     }
 
     aside{
-        display: none;
+        height: 150px;
     }
+
+    #pagina{
+        height: auto;
+    }
+
+
 
 }
   
@@ -55,11 +61,11 @@ nav{
     }
 
     aside{
-        flex: 1;
+        flex-grow: 1;
     }
 
     main{
-        flex: 4;
+        flex-grow: 3;
     }
 }
   
@@ -75,7 +81,7 @@ nav{
     }
 
     main{
-        flex: 3;
+        flex: 5;
     }
     
 }

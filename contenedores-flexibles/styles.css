@@ -22,24 +22,24 @@ footer{
     display: flex;
 
     /*define la alineación horizontal de los elementos*/
-    /* justify-content: flex-end; */
+    /* justify-content: center; */
 
     /*define la alineacion vertical de los elementos*/
     /* align-items: flex-end; */
 
     /*wrapping de elementos (breaks cuando hay overflow)*/
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 
     /*cambia la direccion entre columnas y filas*/
-    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
 }
 
 #flexible>div{
-    height: 75px;
-    width: 75px;
+    height: 200px;
+    width: 300px;
 
     /*Crea un element flexible que crece proporcionalmente*/
-    /* flex: 1; */
+    /* flex: 2; */
 
     background-color: darkolivegreen;
     margin: 10px;
@@ -47,9 +47,10 @@ footer{
 
 #flexible>div.especial{
     background-color: darkblue;
-
+    order: 3;
     width: 150px;
 
     /*Crea un element flexible que crece proporcionalmente (2 veces más rápido)*/
-    /* flex: 1; */
+    /* flex-grow: 1; */
+    /* flex: 4; */
 }

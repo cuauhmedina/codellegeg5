@@ -17,7 +17,7 @@ main{
     min-height: 1800px;
 
     /*hace el contender relativo, si tiene descendientes con absoulte será en relación a este contenedor*/
-    /* position: relative; */
+    position: relative;
 }
 
 main div{
@@ -41,9 +41,10 @@ main div{
 #odd{
     background-color: darkblue;
 
-    position: relative;
+    position: absolute;
     top: 50px;
     left: 50px;
+    z-index: 1;
 }
 
 footer{
