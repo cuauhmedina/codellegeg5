@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+}
+
+header{
+    position: sticky;
+    height: 100px;
+    background-color: cornflowerblue;
+}
+
+main{
+    min-height: 650px;
+    background-color: dimgrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main#about{
+    display: block;
+}
+
+main>div{
+    width: 350px;
+    height: 550px;
+    border: 1px solid red;
+    margin: 15px;
+}
+
+footer{
+    height: 200px;
+    background-color: indigo;
+}
+
+header div{
+    display: inline-block;
+    width: 100px;
+    border: 1px solid black;
+    height: 50px;
+}
+
+header div:hover{
+    background-color: lightcoral;
+}
+
+a{
+    text-decoration: none;
+}
+
+header div:hover a{
+    text-decoration: underline;
+}
+
+.current{
+    background-color: lightcoral;
+}
+
+.current a{
+    text-decoration: underline;
+}
+
