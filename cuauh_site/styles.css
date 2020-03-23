@@ -4,8 +4,14 @@ body{
 
 header{
     position: sticky;
+    top: 0px;
     height: 100px;
     background-color: cornflowerblue;
+}
+
+header>div>a{
+    display: block;
+    height: 50px;
 }
 
 main{
@@ -23,8 +29,43 @@ main#about{
 main>div{
     width: 350px;
     height: 550px;
-    border: 1px solid red;
     margin: 15px;
+    padding: 15px;
+    background-color: white;
+}
+
+main>div>img{
+    display: block;
+    margin: auto;
+}
+
+main>div>a{
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    display: block;
+    width: 80px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main h2{
+    text-align: center;
+}
+
+main>div>p{
+    font-size: .9em;
+    text-align: justify;
+}
+
+p.centrado{
+    text-align: center;
+}
+
+p.centrado>b{
+    font-size: 1.5em;
+    color: cornflowerblue;
 }
 
 footer{
@@ -58,4 +99,3 @@ header div:hover a{
 .current a{
     text-decoration: underline;
 }
-
