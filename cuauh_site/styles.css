@@ -9,9 +9,19 @@ header{
     background-color: cornflowerblue;
 }
 
-header>div>a{
+nav>div>a{
     display: block;
     height: 50px;
+}
+
+nav{
+    background-color: lightslategray;
+    padding: 15px;
+}
+
+nav#menu-mobile img{
+    width: 50px;
+    cursor: pointer;
 }
 
 main{
@@ -73,14 +83,14 @@ footer{
     background-color: indigo;
 }
 
-header div{
+nav div{
     display: inline-block;
     width: 100px;
     border: 1px solid black;
     height: 50px;
 }
 
-header div:hover{
+nav div:hover{
     background-color: lightcoral;
 }
 
@@ -88,7 +98,7 @@ a{
     text-decoration: none;
 }
 
-header div:hover a{
+nav div:hover a{
     text-decoration: underline;
 }
 
@@ -98,4 +108,14 @@ header div:hover a{
 
 .current a{
     text-decoration: underline;
+}
+
+@media only screen and (min-width: 891px) {
+    nav#menu-tradicional{
+        display: none;
+    }
+
+    nav#menu-mobile{
+        display: block;
+    }
 }
