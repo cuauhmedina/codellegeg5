@@ -92,6 +92,7 @@ nav div{
 
 nav div:hover{
     background-color: lightcoral;
+    cursor: pointer;
 }
 
 a{
@@ -110,12 +111,59 @@ nav div:hover a{
     text-decoration: underline;
 }
 
-@media only screen and (min-width: 891px) {
+div#mobile-hidden{
+    display: none;
+    background-color: lightsteelblue;
+    width: 100%;
+    height: auto;
+    border: none;
+    position: fixed;
+    left: 0px;
+}
+
+div#mobile-hidden>div{
+    display: block;
+    font-size: 2em;
+    padding: 15px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+#menu-mobile>img:hover+div{
+    display: block;
+}
+
+/* nav#menu-mobile div{
+    border: none;
+}
+
+nav#menu-mobile>div>div{
+    display: block;
+    font-size: 2em;
+    padding: 15px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+} */
+
+@media only screen and (max-width: 891px) {
     nav#menu-tradicional{
         display: none;
     }
 
     nav#menu-mobile{
         display: block;
+    }
+}
+
+@media only screen and (min-width: 892px) {
+    nav#menu-tradicional{
+        display: block;
+    }
+
+    nav#menu-mobile{
+        display: none;
     }
 }
